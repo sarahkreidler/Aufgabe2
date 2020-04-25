@@ -13,7 +13,6 @@ public class AggData {
     private String tradeid;
     private String isin;
     private double mean;
-    //Sarah: noch nicht vollständig zunächst auf Mean beschränkt
 
     public AggData() {
     }

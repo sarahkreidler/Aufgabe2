@@ -3,6 +3,7 @@ package de.kreidler.sarah.dao;
 import de.kreidler.sarah.HibernateUtil;
 import de.kreidler.sarah.domain.Mapping;
 import de.kreidler.sarah.domain.Price;
+import de.kreidler.sarah.domain.JoinData;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

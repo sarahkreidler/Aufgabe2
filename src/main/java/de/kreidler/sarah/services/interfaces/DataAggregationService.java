@@ -9,4 +9,5 @@ import java.util.List;
 public interface DataAggregationService {
 
     List<AggData> aggregateData(List<Mapping> mappings, List<Price> prices);
+
 }
