@@ -7,12 +7,11 @@ public class Price {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    public int id;
 
-    //Sarah: Workaround: Date zunächst als String gesetzt, passendes Datumsformat noch finden
-    private String date;
-    private String isin;
-    private double price;
+    public String date;
+    public String isin;
+    public double price;
 
     public Price() {
     }
@@ -22,4 +21,5 @@ public class Price {
         this.isin = isin;
         this.price = price;
     }
+
 }

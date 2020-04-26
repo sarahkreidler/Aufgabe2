@@ -3,6 +3,7 @@ package de.kreidler.sarah.dao;
 import de.kreidler.sarah.HibernateUtil;
 import de.kreidler.sarah.domain.Mapping;
 import de.kreidler.sarah.domain.Price;
+import de.kreidler.sarah.domain.JoinData;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -17,7 +18,7 @@ public class MarketDao {
             // start a transaction
             transaction = session.beginTransaction();
             // save the student objects
-            session.save(mappings.get(0));
+            session.save(mappings.get(1));
 
             // commit transaction
             transaction.commit();
