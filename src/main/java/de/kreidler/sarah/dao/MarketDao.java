@@ -10,14 +10,14 @@ import java.util.List;
 
 public class MarketDao {
 
-    public void save(List<Mapping> mappings) {
+    public List<Mapping> save(List<Mapping> mappings) {
 
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             // start a transaction
             transaction = session.beginTransaction();
             // save the student objects
-            session.save(mappings.get(0));
+            session.save(mappings.get(1));
 
             // commit transaction
             transaction.commit();
@@ -27,6 +27,7 @@ public class MarketDao {
             }
             e.printStackTrace();
         }
+        return mappings;
     }
 
     public List<Mapping> getMappings() {
@@ -43,7 +44,7 @@ public class MarketDao {
     }
 
 
-    public void savePrice(List<Price> prices) {
+    public List<Price> savePrice(List<Price> prices) {
 
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
@@ -60,6 +61,8 @@ public class MarketDao {
             }
             e.printStackTrace();
         }
+        return prices;
+
     }
 
     public List<Price> getPrices() {

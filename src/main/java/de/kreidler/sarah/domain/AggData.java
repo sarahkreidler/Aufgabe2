@@ -12,15 +12,14 @@ public class AggData {
 
     private String tradeid;
     private String isin;
-    private double mean;
-    //Sarah: noch nicht vollständig zunächst auf Mean beschränkt
+    private double price;
 
     public AggData() {
     }
 
-    public AggData(String tradeid, String isin, double mean) {
+    public AggData(String tradeid, String isin ,double price) {
         this.tradeid = tradeid;
         this.isin = isin;
-        this.mean = mean;
+        this.price = price;
     }
 }

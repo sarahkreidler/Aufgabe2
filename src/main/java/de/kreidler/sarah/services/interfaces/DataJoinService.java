@@ -2,11 +2,12 @@ package de.kreidler.sarah.services.interfaces;
 
 import de.kreidler.sarah.domain.Mapping;
 import de.kreidler.sarah.domain.Price;
+import de.kreidler.sarah.domain.JoinData;
 
 import java.util.List;
 
-public interface DataAggregationService {
+public interface DataJoinService {
 
-    List<Price> aggregateData(List<Mapping> mappings, List<Price> prices);
+    List<JoinData> joinData (List<Mapping> mappings, List<Price> prices);
 
 }
